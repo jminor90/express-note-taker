@@ -99,15 +99,18 @@ app.delete('/api/notes/:id', (req, res) => {
 
   const deleteID = req.params.id
 
-  const deleteData = myArray.find(myArray => myArray.id === deleteID)
+  const deleteData = myArray.filter(myArrayAaron => myArrayAaron.id !== deleteID)
+  // const deleteData = myArray.find(myArray => myArray.id === deleteID)
 
-  if (deleteData) {
-    myArray = myArray.filter(myArray => channel.id !== deleteID)
-  } else {
-    console.error()
-  }
+  // if (deleteData) {
+  //   myArray = myArray.filter(myArray => channel.id !== deleteID)
+  // } else {
+  //   console.error()
+  // }
 
-
+  writeToFile('./db/db.json', deleteData )
+  ///file interaction
+  res.json(`Removed! ${deleteID}`)
   console.log(typeof myArray)
 })
 
