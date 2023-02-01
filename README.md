@@ -22,11 +22,20 @@ You may need to install the following packages...
 Run "npm install" with node to install needed module packages. ('express' and 'uniqid')
 
 ## Usage
-Link to Application: 
+Link to Application: https://mighty-citadel-05037.herokuapp.com/
 
-After installing necessary modules, you can start the server using "npm start". It will open at http://localhost:3001. The application can also be accessed through a deployed link. (Which I will link here soon)
+After installing necessary modules, you can start the server using "npm start". It will open at http://localhost:3001. The application can also be accessed through a deployed link. (Listed above)
 
-Video Demonstration: 
+Click on "Get Started" to go to the Notes page. Enter a Title and necessary information in the Text Field. Click the Save Icon at the top (Will not appear if nothing is filled out).
+
+Delete notes by clicking the red Trash Can icon.
+
+Notes saved through the deployed Heroku website. Will be saved and seen globally to whoever accesses the website. If the application is ran locally (through http://localhost:3001), then the notes will save and persist on that machine.
+
+<img src="assets/note-taker-home.png" alt="Screenshot of Application Home Page" width="1500" />
+<img src="assets/note-taker-note.png" alt="Screenshot of Application Note Page" width="1500" />
+
+
 ## Tests
 none
 
